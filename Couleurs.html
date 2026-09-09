@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon imagier des couleurs - CP</title>
+  <style>
+    :root {
+      --primary-color: #4A90E2;
+      --secondary-color: #F5A623;
+      --bg-color: #F7F9FC;
+      --card-bg: #FFFFFF;
+      --text-color: #2C3E50;
+      --border-radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Comic Sans MS, 'Chalkboard SE', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .table-container {
+      max-width: 900px;
+      margin: 0 auto;
+      overflow-x: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: var(--border-radius);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--card-bg);
+    }
+
+    thead {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    th {
+      padding: 16px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #E1E8ED;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    tr:hover {
+      background-color: #F0F4F8;
+    }
+
+    .illustration {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .mot-fr-maj {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #1E3A8A;
+      letter-spacing: 1px;
+    }
+
+    .mot-fr-min {
+      font-size: 1.2rem;
+      color: #3B82F6;
+      font-style: italic;
+    }
+
+    .chinois {
+      font-size: 1.1rem;
+      color: #D97706;
+    }
+
+    .pinyin {
+      font-size: 0.9rem;
+      color: #9CA3AF;
+    }
+
+    .btn-audio {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.1s ease, background-color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .btn-audio:hover {
+      background-color: #E09216;
+      transform: scale(1.08);
+    }
+
+    .btn-audio:active {
+      transform: scale(0.95);
+    }
+	
+	.btn-home {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-home:hover {
+  background-color: #357ABD;
+  transform: scale(1.03);
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <header>
+	  <a href="index.html" class="btn-home">🏠 Vocabulaire</a>
+	  <p class="subtitle">Clique sur le haut-parleur 🔊 pour écouter le mot en français.</p>
+
+	<h1>🎨 Mon imagier des couleurs / 颜色识字卡</h1>
+    <p class="subtitle">Clique sur le haut-parleur 🔊 pour écouter la couleur en français.</p>
+  </header>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Illustration</th>
+          <th>Mot en Français</th>
+          <th>Aide (中文)</th>
+          <th>Écouter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- BLEU -->
+        <tr>
+          <td class="illustration">🟦</td>
+          <td>
+            <div class="mot-fr-maj">BLEU</div>
+            <div class="mot-fr-min">bleu</div>
+          </td>
+          <td><div class="chinois">蓝色</div><div class="pinyin">lán sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bleu')">🔊</button></td>
+        </tr>
+
+        <!-- BLANC -->
+        <tr>
+          <td class="illustration">⬜</td>
+          <td>
+            <div class="mot-fr-maj">BLANC</div>
+            <div class="mot-fr-min">blanc</div>
+          </td>
+          <td><div class="chinois">白色</div><div class="pinyin">bái sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('blanc')">🔊</button></td>
+        </tr>
+
+        <!-- ROUGE -->
+        <tr>
+          <td class="illustration">🟥</td>
+          <td>
+            <div class="mot-fr-maj">ROUGE</div>
+            <div class="mot-fr-min">rouge</div>
+          </td>
+          <td><div class="chinois">红色</div><div class="pinyin">hóng sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('rouge')">🔊</button></td>
+        </tr>
+
+        <!-- ORANGE -->
+        <tr>
+          <td class="illustration">🟧</td>
+          <td>
+            <div class="mot-fr-maj">ORANGE</div>
+            <div class="mot-fr-min">orange</div>
+          </td>
+          <td><div class="chinois">橙色</div><div class="pinyin">chéng sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('orange')">🔊</button></td>
+        </tr>
+
+        <!-- JAUNE -->
+        <tr>
+          <td class="illustration">🟨</td>
+          <td>
+            <div class="mot-fr-maj">JAUNE</div>
+            <div class="mot-fr-min">jaune</div>
+          </td>
+          <td><div class="chinois">黄色</div><div class="pinyin">huáng sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('jaune')">🔊</button></td>
+        </tr>
+
+        <!-- VIOLET -->
+        <tr>
+          <td class="illustration">🟪</td>
+          <td>
+            <div class="mot-fr-maj">VIOLET</div>
+            <div class="mot-fr-min">violet</div>
+          </td>
+          <td><div class="chinois">紫色</div><div class="pinyin">zǐ sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('violet')">🔊</button></td>
+        </tr>
+
+        <!-- VERT -->
+        <tr>
+          <td class="illustration">🟩</td>
+          <td>
+            <div class="mot-fr-maj">VERT</div>
+            <div class="mot-fr-min">vert</div>
+          </td>
+          <td><div class="chinois">绿色</div><div class="pinyin">lǜ sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('vert')">🔊</button></td>
+        </tr>
+
+        <!-- MARRON -->
+        <tr>
+          <td class="illustration">🟫</td>
+          <td>
+            <div class="mot-fr-maj">MARRON</div>
+            <div class="mot-fr-min">marron</div>
+          </td>
+          <td><div class="chinois">棕色 / 褐色</div><div class="pinyin">zōng sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('marron')">🔊</button></td>
+        </tr>
+
+        <!-- NOIR -->
+        <tr>
+          <td class="illustration">⬛</td>
+          <td>
+            <div class="mot-fr-maj">NOIR</div>
+            <div class="mot-fr-min">noir</div>
+          </td>
+          <td><div class="chinois">黑色</div><div class="pinyin">hēi sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('noir')">🔊</button></td>
+        </tr>
+
+        <!-- GRIS -->
+        <tr>
+          <td class="illustration">🔘</td>
+          <td>
+            <div class="mot-fr-maj">GRIS</div>
+            <div class="mot-fr-min">gris</div>
+          </td>
+          <td><div class="chinois">灰色</div><div class="pinyin">huī sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('gris')">🔊</button></td>
+        </tr>
+
+        <!-- ROSE -->
+        <tr>
+          <td class="illustration">🌸</td>
+          <td>
+            <div class="mot-fr-maj">ROSE</div>
+            <div class="mot-fr-min">rose</div>
+          </td>
+          <td><div class="chinois">粉红色</div><div class="pinyin">fěn hóng sè</div></td>
+          <td><button class="btn-audio" onclick="lireMot('rose')">🔊</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function lireMot(texte) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(texte);
+        utterance.lang = 'fr-FR';
+        utterance.rate = 0.85;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("La synthèse vocale n'est pas supportée par votre navigateur.");
+      }
+    }
+  </script>
+</body>
+</html>

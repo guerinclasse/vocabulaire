@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon imagier du matériel scolaire - CP</title>
+  <title>Mes imagiers de français - CP</title>
   <style>
     :root {
       --primary-color: #4A90E2;
@@ -24,231 +24,141 @@
 
     header {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
 
     h1 {
       color: var(--primary-color);
-      font-size: 2.2rem;
-      margin-bottom: 5px;
+      font-size: 2.3rem;
+      margin-bottom: 8px;
     }
 
     p.subtitle {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #666;
     }
 
-    .table-container {
+    .grid-container {
       max-width: 900px;
       margin: 0 auto;
-      overflow-x: auto;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border-radius: var(--border-radius);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 10px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .card {
       background-color: var(--card-bg);
-    }
-
-    thead {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    th {
-      padding: 16px;
-      font-size: 1.2rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      padding: 25px 20px;
       text-align: center;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid transparent;
     }
 
-    td {
-      padding: 14px 20px;
-      border-bottom: 1px solid #E1E8ED;
-      text-align: center;
-      vertical-align: middle;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      border-color: var(--primary-color);
     }
 
-    tr:hover {
-      background-color: #F0F4F8;
+    .card-icon {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
     }
 
-    .illustration {
-      font-size: 3rem;
-      line-height: 1;
-    }
-
-    .mot-fr-maj {
-      font-weight: bold;
+    .card-title-fr {
       font-size: 1.3rem;
+      font-weight: bold;
       color: #1E3A8A;
-      letter-spacing: 1px;
+      margin-bottom: 5px;
     }
 
-    .mot-fr-min {
-      font-size: 1.2rem;
-      color: #3B82F6;
-      font-style: italic;
-    }
-
-    .chinois {
+    .card-title-cn {
       font-size: 1.1rem;
       color: #D97706;
     }
 
-    .pinyin {
+    .card-pinyin {
       font-size: 0.9rem;
       color: #9CA3AF;
+      margin-top: 2px;
     }
 
-    .btn-audio {
+    .btn-ouvrir {
+      margin-top: 15px;
       background-color: var(--secondary-color);
       color: white;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: transform 0.1s ease, background-color 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .btn-audio:hover {
-      background-color: #E09216;
-      transform: scale(1.08);
-    }
-
-    .btn-audio:active {
-      transform: scale(0.95);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🎒 Mon matériel de classe / 我的学校用品</h1>
-    <p class="subtitle">Clique sur le haut-parleur 🔊 pour écouter le mot en français.</p>
+    <h1>📚 Mes imagiers de français / 我的法语识字卡</h1>
+    <p class="subtitle">Choisis un thème pour réviser ton vocabulaire !</p>
   </header>
 
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Illustration</th>
-          <th>Mot en Français</th>
-          <th>Aide (中文)</th>
-          <th>Écouter</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- UN CARTABLE -->
-        <tr>
-          <td class="illustration">🎒</td>
-          <td>
-            <div class="mot-fr-maj">UN CARTABLE</div>
-            <div class="mot-fr-min">un cartable</div>
-          </td>
-          <td><div class="chinois">书包</div><div class="pinyin">shū bāo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un cartable')">🔊</button></td>
-        </tr>
+  <div class="grid-container">
 
-        <!-- UNE TROUSSE -->
-        <tr>
-          <td class="illustration">👝</td>
-          <td>
-            <div class="mot-fr-maj">UNE TROUSSE</div>
-            <div class="mot-fr-min">une trousse</div>
-          </td>
-          <td><div class="chinois">笔袋</div><div class="pinyin">bǐ dài</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une trousse')">🔊</button></td>
-        </tr>
+    <!-- PAGE 1 : MATÉRIEL SCOLAIRE -->
+    <a href="MaterielScolaire.html" class="card">
+      <div class="card-icon">🎒</div>
+      <div class="card-title-fr">LE MATÉRIEL</div>
+      <div class="card-title-cn">学校用品</div>
+      <div class="card-pinyin">xué xiào yòng pǐn</div>
+      <div class="btn-ouvrir">Voir / 查看</div>
+    </a>
 
-        <!-- UN STYLO -->
-        <tr>
-          <td class="illustration">🖊️</td>
-          <td>
-            <div class="mot-fr-maj">UN STYLO</div>
-            <div class="mot-fr-min">un stylo</div>
-          </td>
-          <td><div class="chinois">圆珠笔</div><div class="pinyin">yuán zhū bǐ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un stylo')">🔊</button></td>
-        </tr>
+    <!-- PAGE 2 : LES ANIMAUX -->
+    <a href="Animaux.html" class="card">
+      <div class="card-icon">🦁</div>
+      <div class="card-title-fr">LES ANIMAUX</div>
+      <div class="card-title-cn">动物</div>
+      <div class="card-pinyin">dòng wù</div>
+      <div class="btn-ouvrir">Voir / 查看</div>
+    </a>
 
-        <!-- UN FEUTRE -->
-        <tr>
-          <td class="illustration">🖍️</td>
-          <td>
-            <div class="mot-fr-maj">UN FEUTRE</div>
-            <div class="mot-fr-min">un feutre</div>
-          </td>
-          <td><div class="chinois">水彩笔</div><div class="pinyin">shuǐ cǎi bǐ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un feutre')">🔊</button></td>
-        </tr>
+    <!-- PAGE 3 : LA POLITESSE -->
+    <a href="FormulesPolitesse.html" class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-title-fr">LA POLITESSE</div>
+      <div class="card-title-cn">礼貌用语</div>
+      <div class="card-pinyin">lǐ mào yòng yǔ</div>
+      <div class="btn-ouvrir">Voir / 查看</div>
+    </a>
 
-        <!-- UN CRAYON A PAPIER -->
-        <tr>
-          <td class="illustration">✏️</td>
-          <td>
-            <div class="mot-fr-maj">UN CRAYON À PAPIER</div>
-            <div class="mot-fr-min">un crayon à papier</div>
-          </td>
-          <td><div class="chinois">铅笔</div><div class="pinyin">qiān bǐ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un crayon à papier')">🔊</button></td>
-        </tr>
+    <!-- PAGE 4 : LES COULEURS -->
+    <a href="Couleurs.html" class="card">
+      <div class="card-icon">🎨</div>
+      <div class="card-title-fr">LES COULEURS</div>
+      <div class="card-title-cn">颜色</div>
+      <div class="card-pinyin">yán sè</div>
+      <div class="btn-ouvrir">Voir / 查看</div>
+    </a>
 
-        <!-- UNE GOMME -->
-        <tr>
-          <td class="illustration">🧹</td>
-          <td>
-            <div class="mot-fr-maj">UNE GOMME</div>
-            <div class="mot-fr-min">une gomme</div>
-          </td>
-          <td><div class="chinois">橡皮</div><div class="pinyin">xiàng pí</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une gomme')">🔊</button></td>
-        </tr>
+    <!-- POUR RAJOUTER UNE NOUVELLE PAGE PLUS TARD, DUPLIQUEZ CE BLOC :
+    <a href="nom-de-page.html" class="card">
+      <div class="card-icon">ÉMOJI</div>
+      <div class="card-title-fr">TITRE FR</div>
+      <div class="card-title-cn">titre cn</div>
+      <div class="card-pinyin">pinyin</div>
+      <div class="btn-ouvrir">Voir / 查看</div>
+    </a>
+    -->
 
-        <!-- UN LIVRE -->
-        <tr>
-          <td class="illustration">📖</td>
-          <td>
-            <div class="mot-fr-maj">UN LIVRE</div>
-            <div class="mot-fr-min">un livre</div>
-          </td>
-          <td><div class="chinois">书</div><div class="pinyin">shū</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un livre')">🔊</button></td>
-        </tr>
-
-        <!-- UNE ARDOISE -->
-        <tr>
-          <td class="illustration">🖼️</td>
-          <td>
-            <div class="mot-fr-maj">UNE ARDOISE</div>
-            <div class="mot-fr-min">une ardoise</div>
-          </td>
-          <td><div class="chinois">小黑板</div><div class="pinyin">xiǎo hēi bǎn</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une ardoise')">🔊</button></td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 
-  <script>
-    function lireMot(texte) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel(); // Arrête la lecture précédente s'il y en a une
-        const utterance = new SpeechSynthesisUtterance(texte);
-        utterance.lang = 'fr-FR';
-        utterance.rate = 0.85; // Vitesse légèrement ralentie pour une meilleure compréhension CP
-        window.speechSynthesis.speak(utterance);
-      } else {
-        alert("La synthèse vocale n'est pas supportée par votre navigateur.");
-      }
-    }
-  </script>
 </body>
 </html>

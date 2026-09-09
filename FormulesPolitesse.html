@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon imagier de la politesse - CP</title>
+  <style>
+    :root {
+      --primary-color: #4A90E2;
+      --secondary-color: #F5A623;
+      --bg-color: #F7F9FC;
+      --card-bg: #FFFFFF;
+      --text-color: #2C3E50;
+      --border-radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Comic Sans MS, 'Chalkboard SE', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .table-container {
+      max-width: 900px;
+      margin: 0 auto;
+      overflow-x: auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: var(--border-radius);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--card-bg);
+    }
+
+    thead {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    th {
+      padding: 16px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #E1E8ED;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    tr:hover {
+      background-color: #F0F4F8;
+    }
+
+    .illustration {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .mot-fr-maj {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #1E3A8A;
+      letter-spacing: 1px;
+    }
+
+    .mot-fr-min {
+      font-size: 1.2rem;
+      color: #3B82F6;
+      font-style: italic;
+    }
+
+    .chinois {
+      font-size: 1.1rem;
+      color: #D97706;
+    }
+
+    .pinyin {
+      font-size: 0.9rem;
+      color: #9CA3AF;
+    }
+
+    .btn-audio {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.1s ease, background-color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .btn-audio:hover {
+      background-color: #E09216;
+      transform: scale(1.08);
+    }
+
+    .btn-audio:active {
+      transform: scale(0.95);
+    }
+	
+		.btn-home {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-home:hover {
+  background-color: #357ABD;
+  transform: scale(1.03);
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="btn-home">🏠 Vocabulaire</a>
+    <h1>🤝 Les mots doux et la politesse / 礼貌用语</h1>
+    <p class="subtitle">Clique sur le haut-parleur 🔊 pour écouter la formule en français.</p>
+  </header>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Illustration</th>
+          <th>Mot en Français</th>
+          <th>Aide (中文)</th>
+          <th>Écouter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- BONJOUR -->
+        <tr>
+          <td class="illustration">👋</td>
+          <td>
+            <div class="mot-fr-maj">BONJOUR</div>
+            <div class="mot-fr-min">bonjour</div>
+          </td>
+          <td><div class="chinois">你好</div><div class="pinyin">nǐ hǎo</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bonjour')">🔊</button></td>
+        </tr>
+
+        <!-- BONSOIR -->
+        <tr>
+          <td class="illustration">🌆</td>
+          <td>
+            <div class="mot-fr-maj">BONSOIR</div>
+            <div class="mot-fr-min">bonsoir</div>
+          </td>
+          <td><div class="chinois">晚上好</div><div class="pinyin">wǎn shàng hǎo</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bonsoir')">🔊</button></td>
+        </tr>
+
+        <!-- AU REVOIR -->
+        <tr>
+          <td class="illustration">🙋‍♂️</td>
+          <td>
+            <div class="mot-fr-maj">AU REVOIR</div>
+            <div class="mot-fr-min">au revoir</div>
+          </td>
+          <td><div class="chinois">再见</div><div class="pinyin">zài jiàn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('au revoir')">🔊</button></td>
+        </tr>
+
+        <!-- S'IL TE PLAÎT -->
+        <tr>
+          <td class="illustration">🙏</td>
+          <td>
+            <div class="mot-fr-maj">S'IL TE PLAÎT</div>
+            <div class="mot-fr-min">s'il te plaît</div>
+          </td>
+          <td><div class="chinois">请</div><div class="pinyin">qǐng</div></td>
+          <td><button class="btn-audio" onclick="lireMot('s\'il te plaît')">🔊</button></td>
+        </tr>
+
+        <!-- S'IL VOUS PLAÎT -->
+        <tr>
+          <td class="illustration">🤝</td>
+          <td>
+            <div class="mot-fr-maj">S'IL VOUS PLAÎT</div>
+            <div class="mot-fr-min">s'il vous plaît</div>
+          </td>
+          <td><div class="chinois">请（对长辈/多人）</div><div class="pinyin">qǐng</div></td>
+          <td><button class="btn-audio" onclick="lireMot('s\'il vous plaît')">🔊</button></td>
+        </tr>
+
+        <!-- MERCI -->
+        <tr>
+          <td class="illustration">💖</td>
+          <td>
+            <div class="mot-fr-maj">MERCI</div>
+            <div class="mot-fr-min">merci</div>
+          </td>
+          <td><div class="chinois">谢谢</div><div class="pinyin">xiè xie</div></td>
+          <td><button class="btn-audio" onclick="lireMot('merci')">🔊</button></td>
+        </tr>
+
+        <!-- MERCI BEAUCOUP -->
+        <tr>
+          <td class="illustration">🎁</td>
+          <td>
+            <div class="mot-fr-maj">MERCI BEAUCOUP</div>
+            <div class="mot-fr-min">merci beaucoup</div>
+          </td>
+          <td><div class="chinois">非常感谢</div><div class="pinyin">fēi cháng xiè xie</div></td>
+          <td><button class="btn-audio" onclick="lireMot('merci beaucoup')">🔊</button></td>
+        </tr>
+
+        <!-- DE RIEN -->
+        <tr>
+          <td class="illustration">😊</td>
+          <td>
+            <div class="mot-fr-maj">DE RIEN</div>
+            <div class="mot-fr-min">de rien</div>
+          </td>
+          <td><div class="chinois">不客气</div><div class="pinyin">bú kè qi</div></td>
+          <td><button class="btn-audio" onclick="lireMot('de rien')">🔊</button></td>
+        </tr>
+
+        <!-- PARDON -->
+        <tr>
+          <td class="illustration">😅</td>
+          <td>
+            <div class="mot-fr-maj">PARDON</div>
+            <div class="mot-fr-min">pardon</div>
+          </td>
+          <td><div class="chinois">对不起 / 抱歉</div><div class="pinyin">duì bu qǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('pardon')">🔊</button></td>
+        </tr>
+
+        <!-- EXCUSE-MOI -->
+        <tr>
+          <td class="illustration">🙈</td>
+          <td>
+            <div class="mot-fr-maj">EXCUSE-MOI</div>
+            <div class="mot-fr-min">excuse-moi</div>
+          </td>
+          <td><div class="chinois">不好意思</div><div class="pinyin">bù hǎo yì si</div></td>
+          <td><button class="btn-audio" onclick="lireMot('excuse-moi')">🔊</button></td>
+        </tr>
+
+        <!-- BONNE JOURNÉE -->
+        <tr>
+          <td class="illustration">☀️</td>
+          <td>
+            <div class="mot-fr-maj">BONNE JOURNÉE</div>
+            <div class="mot-fr-min">bonne journée</div>
+          </td>
+          <td><div class="chinois">祝你今天愉快</div><div class="pinyin">zhù nǐ jīn tiān yú kuài</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bonne journée')">🔊</button></td>
+        </tr>
+
+        <!-- À BIENTÔT -->
+        <tr>
+          <td class="illustration">⏳</td>
+          <td>
+            <div class="mot-fr-maj">À BIENTÔT</div>
+            <div class="mot-fr-min">à bientôt</div>
+          </td>
+          <td><div class="chinois">一会儿见 / 改天见</div><div class="pinyin">yī huì r jiàn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('à bientôt')">🔊</button></td>
+        </tr>
+
+        <!-- À DEMAIN -->
+        <tr>
+          <td class="illustration">📅</td>
+          <td>
+            <div class="mot-fr-maj">À DEMAIN</div>
+            <div class="mot-fr-min">à demain</div>
+          </td>
+          <td><div class="chinois">明天见</div><div class="pinyin">míng tiān jiàn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('à demain')">🔊</button></td>
+        </tr>
+
+        <!-- BRAVO -->
+        <tr>
+          <td class="illustration">👏</td>
+          <td>
+            <div class="mot-fr-maj">BRAVO</div>
+            <div class="mot-fr-min">bravo</div>
+          </td>
+          <td><div class="chinois">太棒了 / 真棒</div><div class="pinyin">tài bàng le</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bravo')">🔊</button></td>
+        </tr>
+
+        <!-- BIENVENUE -->
+        <tr>
+          <td class="illustration">🤗</td>
+          <td>
+            <div class="mot-fr-maj">BIENVENUE</div>
+            <div class="mot-fr-min">bienvenue</div>
+          </td>
+          <td><div class="chinois">欢迎</div><div class="pinyin">huān yíng</div></td>
+          <td><button class="btn-audio" onclick="lireMot('bienvenue')">🔊</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function lireMot(texte) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(texte);
+        utterance.lang = 'fr-FR';
+        utterance.rate = 0.85;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("La synthèse vocale n'est pas supportée par votre navigateur.");
+      }
+    }
+  </script>
+</body>
+</html>
