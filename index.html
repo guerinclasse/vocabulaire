@@ -101,6 +101,22 @@
       font-size: 0.95rem;
       font-weight: bold;
     }
+	
+	    /* Style pour le conteneur et l'image du QR code en bas de page */
+    .qr-container {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px 0;
+    }
+
+    .qr-code {
+      max-width: 180px;
+      height: auto;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      background-color: var(--card-bg);
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
@@ -159,6 +175,11 @@
     -->
 
   </div>
-
+ <!-- QR CODE CENTRÉ EN BAS DE PAGE -->
+  <div class="qr-container">
+    <a href="index.html">
+	<img src="qrCode_vocabulaire_github.png" alt="QR Code Vocabulaire" class="qr-code">
+	</a>
+  </div>
 </body>
 </html>
