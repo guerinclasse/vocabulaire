@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon imagier des animaux - CP</title>
+  <title>Mon imagier du matériel scolaire - CP</title>
   <style>
     :root {
       --primary-color: #4A90E2;
@@ -127,26 +127,25 @@
       transform: scale(0.95);
     }
 	
-	.btn-home {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
+    .btn-home {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
 
-.btn-home:hover {
-  background-color: #357ABD;
-  transform: scale(1.03);
-}
+    .btn-home:hover {
+      background-color: #357ABD;
+      transform: scale(1.03);
+    }
 
-    /* Style pour le conteneur et l'image du QR code en bas de page */
     .qr-container {
       text-align: center;
       margin-top: 30px;
@@ -161,14 +160,13 @@
       background-color: var(--card-bg);
       padding: 10px;
     }
-	
   </style>
 </head>
 <body>
 
   <header>
-	<a href="index.html" class="btn-home">🏠 Vocabulaire</a>
-    <h1>🦁 Mon imagier des animaux / 动物识字卡</h1>
+    <a href="index.html" class="btn-home">🏠 Vocabulaire</a>
+    <h1>🎒 Mon imagier du matériel scolaire / 学习用品识字卡</h1>
     <p class="subtitle">Clique sur le haut-parleur 🔊 pour écouter le mot en français.</p>
   </header>
 
@@ -183,565 +181,345 @@
         </tr>
       </thead>
       <tbody>
-        <!-- 1. UN CHAT -->
+        <!-- 1. UN CARTABLE -->
         <tr>
-          <td class="illustration">🐱</td>
+          <td class="illustration">🎒</td>
           <td>
-            <div class="mot-fr-maj">UN CHAT</div>
-            <div class="mot-fr-min">un chat</div>
+            <div class="mot-fr-maj">UN CARTABLE</div>
+            <div class="mot-fr-min">un cartable</div>
           </td>
-          <td><div class="chinois">猫</div><div class="pinyin">māo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un chat')">🔊</button></td>
+          <td><div class="chinois">书包</div><div class="pinyin">shū bāo</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un cartable')">🔊</button></td>
         </tr>
 
-        <!-- 2. UN CHIEN -->
+        <!-- 2. UNE TROUSSE -->
         <tr>
-          <td class="illustration">🐶</td>
+          <td class="illustration">👝</td>
           <td>
-            <div class="mot-fr-maj">UN CHIEN</div>
-            <div class="mot-fr-min">un chien</div>
+            <div class="mot-fr-maj">UNE TROUSSE</div>
+            <div class="mot-fr-min">une trousse</div>
           </td>
-          <td><div class="chinois">狗</div><div class="pinyin">gǒu</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un chien')">🔊</button></td>
+          <td><div class="chinois">铅笔盒</div><div class="pinyin">qiān bǐ hé</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une trousse')">🔊</button></td>
         </tr>
 
-        <!-- 3. UN LAPIN -->
+        <!-- 3. UN STYLO -->
         <tr>
-          <td class="illustration">🐰</td>
+          <td class="illustration">🖊️</td>
           <td>
-            <div class="mot-fr-maj">UN LAPIN</div>
-            <div class="mot-fr-min">un lapin</div>
+            <div class="mot-fr-maj">UN STYLO</div>
+            <div class="mot-fr-min">un stylo</div>
           </td>
-          <td><div class="chinois">兔子</div><div class="pinyin">tù zi</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un lapin')">🔊</button></td>
+          <td><div class="chinois">圆珠笔</div><div class="pinyin">yuán zhū bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un stylo')">🔊</button></td>
         </tr>
 
-        <!-- 4. UN OISEAU -->
+        <!-- 4. UN CRAYON DE PAPIER -->
         <tr>
-          <td class="illustration">🐦</td>
+          <td class="illustration">✏️</td>
           <td>
-            <div class="mot-fr-maj">UN OISEAU</div>
-            <div class="mot-fr-min">un oiseau</div>
+            <div class="mot-fr-maj">UN CRAYON</div>
+            <div class="mot-fr-min">un crayon</div>
           </td>
-          <td><div class="chinois">鸟</div><div class="pinyin">niǎo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un oiseau')">🔊</button></td>
+          <td><div class="chinois">铅笔</div><div class="pinyin">qiān bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un crayon')">🔊</button></td>
         </tr>
 
-        <!-- 5. UN POISSON -->
+        <!-- 5. UNE GOMME -->
         <tr>
-          <td class="illustration">🐟</td>
+          <td class="illustration">🧼</td>
           <td>
-            <div class="mot-fr-maj">UN POISSON</div>
-            <div class="mot-fr-min">un poisson</div>
+            <div class="mot-fr-maj">UNE GOMME</div>
+            <div class="mot-fr-min">une gomme</div>
           </td>
-          <td><div class="chinois">鱼</div><div class="pinyin">yú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un poisson')">🔊</button></td>
+          <td><div class="chinois">橡皮擦</div><div class="pinyin">xiàng pí cā</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une gomme')">🔊</button></td>
         </tr>
 
-        <!-- 6. UNE SOURIS -->
+        <!-- 6. UN TAILLE-CRAYON -->
         <tr>
-          <td class="illustration">🐭</td>
+          <td class="illustration">⚙️</td>
           <td>
-            <div class="mot-fr-maj">UNE SOURIS</div>
-            <div class="mot-fr-min">une souris</div>
+            <div class="mot-fr-maj">UN TAILLE-CRAYON</div>
+            <div class="mot-fr-min">un taille-crayon</div>
           </td>
-          <td><div class="chinois">老鼠</div><div class="pinyin">lǎo shǔ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une souris')">🔊</button></td>
+          <td><div class="chinois">卷笔刀</div><div class="pinyin">juǎn bǐ dāo</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un taille-crayon')">🔊</button></td>
         </tr>
 
-        <!-- 7. UN CHEVAL -->
+        <!-- 7. UNE RÈGLE -->
         <tr>
-          <td class="illustration">🐴</td>
+          <td class="illustration">📏</td>
           <td>
-            <div class="mot-fr-maj">UN CHEVAL</div>
-            <div class="mot-fr-min">un cheval</div>
+            <div class="mot-fr-maj">UNE RÈGLE</div>
+            <div class="mot-fr-min">une règle</div>
           </td>
-          <td><div class="chinois">马</div><div class="pinyin">mǎ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un cheval')">🔊</button></td>
+          <td><div class="chinois">直尺</div><div class="pinyin">zhí chǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une règle')">🔊</button></td>
         </tr>
 
-        <!-- 8. UNE VACHE -->
+        <!-- 8. DES CISEAUX -->
         <tr>
-          <td class="illustration">🐮</td>
+          <td class="illustration">✂️</td>
           <td>
-            <div class="mot-fr-maj">UNE VACHE</div>
-            <div class="mot-fr-min">une vache</div>
+            <div class="mot-fr-maj">DES CISEAUX</div>
+            <div class="mot-fr-min">des ciseaux</div>
           </td>
-          <td><div class="chinois">奶牛</div><div class="pinyin">nǎi niú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une vache')">🔊</button></td>
+          <td><div class="chinois">剪刀</div><div class="pinyin">jiǎn dāo</div></td>
+          <td><button class="btn-audio" onclick="lireMot('des ciseaux')">🔊</button></td>
         </tr>
 
-        <!-- 9. UN COCHON -->
+        <!-- 9. UN BÂTON DE COLLE -->
         <tr>
-          <td class="illustration">🐷</td>
+          <td class="illustration">🧪</td>
           <td>
-            <div class="mot-fr-maj">UN COCHON</div>
-            <div class="mot-fr-min">un cochon</div>
+            <div class="mot-fr-maj">DE LA COLLE</div>
+            <div class="mot-fr-min">de la colle</div>
           </td>
-          <td><div class="chinois">猪</div><div class="pinyin">zhū</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un cochon')">🔊</button></td>
+          <td><div class="chinois">胶水</div><div class="pinyin">jiāo shuǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('de la colle')">🔊</button></td>
         </tr>
 
-        <!-- 10. UN MOUTON -->
+        <!-- 10. UN FEUTRE -->
         <tr>
-          <td class="illustration">🐑</td>
+          <td class="illustration">🖍️</td>
           <td>
-            <div class="mot-fr-maj">UN MOUTON</div>
-            <div class="mot-fr-min">un mouton</div>
+            <div class="mot-fr-maj">UN FEUTRE</div>
+            <div class="mot-fr-min">un feutre</div>
           </td>
-          <td><div class="chinois">绵羊</div><div class="pinyin">mián yáng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un mouton')">🔊</button></td>
+          <td><div class="chinois">水彩笔</div><div class="pinyin">shuǐ cǎi bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un feutre')">🔊</button></td>
         </tr>
 
-        <!-- 11. UNE CHEVRE -->
+        <!-- 11. UN CRAYON DE COULEUR -->
         <tr>
-          <td class="illustration">🐐</td>
+          <td class="illustration">✏️</td>
           <td>
-            <div class="mot-fr-maj">UNE CHÈVRE</div>
-            <div class="mot-fr-min">une chèvre</div>
+            <div class="mot-fr-maj">UN CRAYON DE COULEUR</div>
+            <div class="mot-fr-min">un crayon de couleur</div>
           </td>
-          <td><div class="chinois">山羊</div><div class="pinyin">shān yáng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une chèvre')">🔊</button></td>
+          <td><div class="chinois">彩色铅笔</div><div class="pinyin">cǎi sè qiān bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un crayon de couleur')">🔊</button></td>
         </tr>
 
-        <!-- 12. UN POULET -->
+        <!-- 12. UN CAHIER -->
         <tr>
-          <td class="illustration">🐔</td>
+          <td class="illustration">📓</td>
           <td>
-            <div class="mot-fr-maj">UN POULET</div>
-            <div class="mot-fr-min">un poulet</div>
+            <div class="mot-fr-maj">UN CAHIER</div>
+            <div class="mot-fr-min">un cahier</div>
           </td>
-          <td><div class="chinois">鸡</div><div class="pinyin">jī</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un poulet')">🔊</button></td>
+          <td><div class="chinois">练习本</div><div class="pinyin">liàn xí běn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un cahier')">🔊</button></td>
         </tr>
 
-        <!-- 13. UN CANARD -->
+        <!-- 13. UN LIVRE -->
         <tr>
-          <td class="illustration">🦆</td>
+          <td class="illustration">📖</td>
           <td>
-            <div class="mot-fr-maj">UN CANARD</div>
-            <div class="mot-fr-min">un canard</div>
+            <div class="mot-fr-maj">UN LIVRE</div>
+            <div class="mot-fr-min">un livre</div>
           </td>
-          <td><div class="chinois">鸭子</div><div class="pinyin">yā zi</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un canard')">🔊</button></td>
+          <td><div class="chinois">书本</div><div class="pinyin">shū běn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un livre')">🔊</button></td>
         </tr>
 
-        <!-- 14. UN LION -->
+        <!-- 14. UN AGENDA / AGENDA -->
         <tr>
-          <td class="illustration">🦁</td>
+          <td class="illustration">📅</td>
           <td>
-            <div class="mot-fr-maj">UN LION</div>
-            <div class="mot-fr-min">un lion</div>
+            <div class="mot-fr-maj">UN AGENDA</div>
+            <div class="mot-fr-min">un agenda</div>
           </td>
-          <td><div class="chinois">狮子</div><div class="pinyin">shī zi</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un lion')">🔊</button></td>
+          <td><div class="chinois">记事本</div><div class="pinyin">jì shì běn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un agenda')">🔊</button></td>
         </tr>
 
-        <!-- 15. UN TIGRE -->
+        <!-- 15. UNE ARDOISE -->
         <tr>
-          <td class="illustration">🐯</td>
+          <td class="illustration">🖼️</td>
           <td>
-            <div class="mot-fr-maj">UN TIGRE</div>
-            <div class="mot-fr-min">un tigre</div>
+            <div class="mot-fr-maj">UNE ARDOISE</div>
+            <div class="mot-fr-min">une ardoise</div>
           </td>
-          <td><div class="chinois">老虎</div><div class="pinyin">lǎo hǔ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un tigre')">🔊</button></td>
+          <td><div class="chinois">小写字板</div><div class="pinyin">xiǎo xiě zì bǎn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une ardoise')">🔊</button></td>
         </tr>
 
-        <!-- 16. UN ELEPHANT -->
+        <!-- 16. UN FEUTRE VLEDA -->
         <tr>
-          <td class="illustration">🐘</td>
+          <td class="illustration">🖊️</td>
           <td>
-            <div class="mot-fr-maj">UN ÉLÉPHANT</div>
-            <div class="mot-fr-min">un éléphant</div>
+            <div class="mot-fr-maj">UN FEUTRE EFFAÇABLE</div>
+            <div class="mot-fr-min">un feutre effaçable</div>
           </td>
-          <td><div class="chinois">大象</div><div class="pinyin">dà xiàng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un éléphant')">🔊</button></td>
+          <td><div class="chinois">白板笔</div><div class="pinyin">bái bǎn bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un feutre effaçable')">🔊</button></td>
         </tr>
 
-        <!-- 17. UNE GIRAFE -->
+        <!-- 17. UN CHIFFON -->
         <tr>
-          <td class="illustration">🦒</td>
+          <td class="illustration">🧽</td>
           <td>
-            <div class="mot-fr-maj">UNE GIRAFE</div>
-            <div class="mot-fr-min">une girafe</div>
+            <div class="mot-fr-maj">UN CHIFFON</div>
+            <div class="mot-fr-min">un chiffon</div>
           </td>
-          <td><div class="chinois">长颈鹿</div><div class="pinyin">cháng jǐng lù</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une girafe')">🔊</button></td>
+          <td><div class="chinois">抹布 / 板擦</div><div class="pinyin">mā bù</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un chiffon')">🔊</button></td>
         </tr>
 
-        <!-- 18. UN SINGE -->
+        <!-- 18. UN CLASSEUR -->
         <tr>
-          <td class="illustration">🐵</td>
+          <td class="illustration">📁</td>
           <td>
-            <div class="mot-fr-maj">UN SINGE</div>
-            <div class="mot-fr-min">un singe</div>
+            <div class="mot-fr-maj">UN CLASSEUR</div>
+            <div class="mot-fr-min">un classeur</div>
           </td>
-          <td><div class="chinois">猴子</div><div class="pinyin">hóu zi</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un singe')">🔊</button></td>
+          <td><div class="chinois">活页文件夹</div><div class="pinyin">huó yè wén jiàn jiā</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un classeur')">🔊</button></td>
         </tr>
 
-        <!-- 19. UN OURS -->
+        <!-- 19. UNE POCHETTE -->
         <tr>
-          <td class="illustration">🐻</td>
+          <td class="illustration">📂</td>
           <td>
-            <div class="mot-fr-maj">UN OURS</div>
-            <div class="mot-fr-min">un ours</div>
+            <div class="mot-fr-maj">UNE POCHETTE</div>
+            <div class="mot-fr-min">une pochette</div>
           </td>
-          <td><div class="chinois">熊</div><div class="pinyin">xióng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un ours')">🔊</button></td>
+          <td><div class="chinois">文件夹</div><div class="pinyin">wén jiàn jiā</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une pochette')">🔊</button></td>
         </tr>
 
-        <!-- 20. UN PANDA -->
+        <!-- 20. UNE FEUILLE DE PAPIER -->
         <tr>
-          <td class="illustration">🐼</td>
+          <td class="illustration">📄</td>
           <td>
-            <div class="mot-fr-maj">UN PANDA</div>
-            <div class="mot-fr-min">un panda</div>
+            <div class="mot-fr-maj">UNE FEUILLE</div>
+            <div class="mot-fr-min">une feuille</div>
           </td>
-          <td><div class="chinois">熊猫</div><div class="pinyin">xióng māo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un panda')">🔊</button></td>
+          <td><div class="chinois">一张纸</div><div class="pinyin">yī zhāng zhǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une feuille')">🔊</button></td>
         </tr>
 
-        <!-- 21. UN ZEBRE -->
+        <!-- 21. UN SURLIGNEUR -->
         <tr>
-          <td class="illustration">🦓</td>
+          <td class="illustration">🖊️</td>
           <td>
-            <div class="mot-fr-maj">UN ZÈBRE</div>
-            <div class="mot-fr-min">un zèbre</div>
+            <div class="mot-fr-maj">UN SURLIGNEUR</div>
+            <div class="mot-fr-min">un surligneur</div>
           </td>
-          <td><div class="chinois">斑马</div><div class="pinyin">bān mǎ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un zèbre')">🔊</button></td>
+          <td><div class="chinois">荧光笔</div><div class="pinyin">yíng guāng bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un surligneur')">🔊</button></td>
         </tr>
 
-        <!-- 22. UN KANGOUROU -->
+        <!-- 22. UN PINCEAU -->
         <tr>
-          <td class="illustration">🦘</td>
+          <td class="illustration">🖌️</td>
           <td>
-            <div class="mot-fr-maj">UN KANGOUROU</div>
-            <div class="mot-fr-min">un kangourou</div>
+            <div class="mot-fr-maj">UN PINCEAU</div>
+            <div class="mot-fr-min">un pinceau</div>
           </td>
-          <td><div class="chinois">袋鼠</div><div class="pinyin">dài shǔ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un kangourou')">🔊</button></td>
+          <td><div class="chinois">画笔</div><div class="pinyin">huà bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un pinceau')">🔊</button></td>
         </tr>
 
-        <!-- 23. UN CROCODILE -->
+        <!-- 23. DE LA PEINTURE -->
         <tr>
-          <td class="illustration">🐊</td>
+          <td class="illustration">🎨</td>
           <td>
-            <div class="mot-fr-maj">UN CROCODILE</div>
-            <div class="mot-fr-min">un crocodile</div>
+            <div class="mot-fr-maj">DE LA PEINTURE</div>
+            <div class="mot-fr-min">de la peinture</div>
           </td>
-          <td><div class="chinois">鳄鱼</div><div class="pinyin">è yú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un crocodile')">🔊</button></td>
+          <td><div class="chinois">颜料</div><div class="pinyin">yán liào</div></td>
+          <td><button class="btn-audio" onclick="lireMot('de la peinture')">🔊</button></td>
         </tr>
 
-        <!-- 24. UN SERPENT -->
+        <!-- 24. DE LA PÂTE À MODELER -->
         <tr>
-          <td class="illustration">🐍</td>
+          <td class="illustration">🏺</td>
           <td>
-            <div class="mot-fr-maj">UN SERPENT</div>
-            <div class="mot-fr-min">un serpent</div>
+            <div class="mot-fr-maj">DE LA PÂTE À MODELER</div>
+            <div class="mot-fr-min">de la pâte à modeler</div>
           </td>
-          <td><div class="chinois">蛇</div><div class="pinyin">shé</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un serpent')">🔊</button></td>
+          <td><div class="chinois">橡皮泥</div><div class="pinyin">xiàng pí ní</div></td>
+          <td><button class="btn-audio" onclick="lireMot('de la pâte à modeler')">🔊</button></td>
         </tr>
 
-        <!-- 25. UNE GRENOUILLE -->
+        <!-- 25. UNE TABLE / UN BUREAU -->
         <tr>
-          <td class="illustration">🐸</td>
+          <td class="illustration">🪑</td>
           <td>
-            <div class="mot-fr-maj">UNE GRENOUILLE</div>
-            <div class="mot-fr-min">une grenouille</div>
+            <div class="mot-fr-maj">UN BUREAU</div>
+            <div class="mot-fr-min">un bureau</div>
           </td>
-          <td><div class="chinois">青蛙</div><div class="pinyin">qīng wā</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une grenouille')">🔊</button></td>
+          <td><div class="chinois">课桌</div><div class="pinyin">kè zhuō</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un bureau')">🔊</button></td>
         </tr>
 
-        <!-- 26. UNE TORTUE -->
+        <!-- 26. UNE CHAISE -->
         <tr>
-          <td class="illustration">🐢</td>
+          <td class="illustration">🪑</td>
           <td>
-            <div class="mot-fr-maj">UNE TORTUE</div>
-            <div class="mot-fr-min">une tortue</div>
+            <div class="mot-fr-maj">UNE CHAISE</div>
+            <div class="mot-fr-min">une chaise</div>
           </td>
-          <td><div class="chinois">乌龟</div><div class="pinyin">wū guī</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une tortue')">🔊</button></td>
+          <td><div class="chinois">椅子</div><div class="pinyin">yǐ zi</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une chaise')">🔊</button></td>
         </tr>
 
-        <!-- 27. UN HIPPOPOTAME -->
+        <!-- 27. UN TABLEAU -->
         <tr>
-          <td class="illustration">🦛</td>
+          <td class="illustration">🟫</td>
           <td>
-            <div class="mot-fr-maj">UN HIPPOPOTAME</div>
-            <div class="mot-fr-min">un hippopotame</div>
+            <div class="mot-fr-maj">UN TABLEAU</div>
+            <div class="mot-fr-min">un tableau</div>
           </td>
-          <td><div class="chinois">河马</div><div class="pinyin">hé mǎ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un hippopotame')">🔊</button></td>
+          <td><div class="chinois">黑板 / 白板</div><div class="pinyin">hēi bǎn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un tableau')">🔊</button></td>
         </tr>
 
-        <!-- 28. UN RHINOCEROS -->
+        <!-- 28. DE LA CRAIE -->
         <tr>
-          <td class="illustration">🦏</td>
+          <td class="illustration">🖍️</td>
           <td>
-            <div class="mot-fr-maj">UN RHINOCÉROS</div>
-            <div class="mot-fr-min">un rhinocéros</div>
+            <div class="mot-fr-maj">DE LA CRAIE</div>
+            <div class="mot-fr-min">de la craie</div>
           </td>
-          <td><div class="chinois">犀牛</div><div class="pinyin">xī niú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un rhinocéros')">🔊</button></td>
+          <td><div class="chinois">粉笔</div><div class="pinyin">fěn bǐ</div></td>
+          <td><button class="btn-audio" onclick="lireMot('de la craie')">🔊</button></td>
         </tr>
 
-        <!-- 29. UN CHAMEAU -->
+        <!-- 29. UNE GOURDE -->
         <tr>
-          <td class="illustration">🐪</td>
+          <td class="illustration">🥤</td>
           <td>
-            <div class="mot-fr-maj">UN CHAMEAU</div>
-            <div class="mot-fr-min">un chameau</div>
+            <div class="mot-fr-maj">UNE GOURDE</div>
+            <div class="mot-fr-min">une gourde</div>
           </td>
-          <td><div class="chinois">骆驼</div><div class="pinyin">luò tuo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un chameau')">🔊</button></td>
+          <td><div class="chinois">水壶</div><div class="pinyin">shuǐ hú</div></td>
+          <td><button class="btn-audio" onclick="lireMot('une gourde')">🔊</button></td>
         </tr>
 
-        <!-- 30. UN LOUP -->
+        <!-- 30. UN MOUCHOIR -->
         <tr>
-          <td class="illustration">🐺</td>
+          <td class="illustration">🧻</td>
           <td>
-            <div class="mot-fr-maj">UN LOUP</div>
-            <div class="mot-fr-min">un loup</div>
+            <div class="mot-fr-maj">UN MOUCHOIR</div>
+            <div class="mot-fr-min">un mouchoir</div>
           </td>
-          <td><div class="chinois">狼</div><div class="pinyin">láng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un loup')">🔊</button></td>
+          <td><div class="chinois">纸巾</div><div class="pinyin">zhǐ jīn</div></td>
+          <td><button class="btn-audio" onclick="lireMot('un mouchoir')">🔊</button></td>
         </tr>
-
-        <!-- 31. UN RENARD -->
-        <tr>
-          <td class="illustration">🦊</td>
-          <td>
-            <div class="mot-fr-maj">UN RENARD</div>
-            <div class="mot-fr-min">un renard</div>
-          </td>
-          <td><div class="chinois">狐狸</div><div class="pinyin">hú li</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un renard')">🔊</button></td>
-        </tr>
-
-        <!-- 32. UN ECUREUIL -->
-        <tr>
-          <td class="illustration">🐿️</td>
-          <td>
-            <div class="mot-fr-maj">UN ÉCUREUIL</div>
-            <div class="mot-fr-min">un écureuil</div>
-          </td>
-          <td><div class="chinois">松鼠</div><div class="pinyin">sōng shǔ</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un écureuil')">🔊</button></td>
-        </tr>
-
-        <!-- 33. UN HÉRISSON -->
-        <tr>
-          <td class="illustration">🦔</td>
-          <td>
-            <div class="mot-fr-maj">UN HÉRISSON</div>
-            <div class="mot-fr-min">un hérisson</div>
-          </td>
-          <td><div class="chinois">刺猬</div><div class="pinyin">cì wei</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un hérisson')">🔊</button></td>
-        </tr>
-
-        <!-- 34. UN HIBOU -->
-        <tr>
-          <td class="illustration">🦉</td>
-          <td>
-            <div class="mot-fr-maj">UN HIBOU</div>
-            <div class="mot-fr-min">un hibou</div>
-          </td>
-          <td><div class="chinois">猫头鹰</div><div class="pinyin">māo tóu yīng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un hibou')">🔊</button></td>
-        </tr>
-
-        <!-- 35. UN AIGLE -->
-        <tr>
-          <td class="illustration">🦅</td>
-          <td>
-            <div class="mot-fr-maj">UN AIGLE</div>
-            <div class="mot-fr-min">un aigle</div>
-          </td>
-          <td><div class="chinois">老鹰</div><div class="pinyin">lǎo yīng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un aigle')">🔊</button></td>
-        </tr>
-
-        <!-- 36. UN PINGOUIN -->
-        <tr>
-          <td class="illustration">🐧</td>
-          <td>
-            <div class="mot-fr-maj">UN PINGOUIN</div>
-            <div class="mot-fr-min">un pingouin</div>
-          </td>
-          <td><div class="chinois">企鹅</div><div class="pinyin">qǐ é</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un pingouin')">🔊</button></td>
-        </tr>
-
-        <!-- 37. UNE BALEINE -->
-        <tr>
-          <td class="illustration">🐳</td>
-          <td>
-            <div class="mot-fr-maj">UNE BALEINE</div>
-            <div class="mot-fr-min">une baleine</div>
-          </td>
-          <td><div class="chinois">鲸鱼</div><div class="pinyin">jīng yú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une baleine')">🔊</button></td>
-        </tr>
-
-        <!-- 38. UN DAUPHIN -->
-        <tr>
-          <td class="illustration">🐬</td>
-          <td>
-            <div class="mot-fr-maj">UN DAUPHIN</div>
-            <div class="mot-fr-min">un dauphin</div>
-          </td>
-          <td><div class="chinois">海豚</div><div class="pinyin">hǎi tún</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un dauphin')">🔊</button></td>
-        </tr>
-
-        <!-- 39. UN REQUIN -->
-        <tr>
-          <td class="illustration">🦈</td>
-          <td>
-            <div class="mot-fr-maj">UN REQUIN</div>
-            <div class="mot-fr-min">un requin</div>
-          </td>
-          <td><div class="chinois">鲨鱼</div><div class="pinyin">shā yú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un requin')">🔊</button></td>
-        </tr>
-
-        <!-- 40. UNE PIEUVRE -->
-        <tr>
-          <td class="illustration">🐙</td>
-          <td>
-            <div class="mot-fr-maj">UNE PIEUVRE</div>
-            <div class="mot-fr-min">une pieuvre</div>
-          </td>
-          <td><div class="chinois">章鱼</div><div class="pinyin">zhāng yú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une pieuvre')">🔊</button></td>
-        </tr>
-
-        <!-- 41. UN CRABE -->
-        <tr>
-          <td class="illustration">🦀</td>
-          <td>
-            <div class="mot-fr-maj">UN CRABE</div>
-            <div class="mot-fr-min">un crabe</div>
-          </td>
-          <td><div class="chinois">螃蟹</div><div class="pinyin">páng xiè</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un crabe')">🔊</button></td>
-        </tr>
-
-        <!-- 42. UNE ABEILLE -->
-        <tr>
-          <td class="illustration">🐝</td>
-          <td>
-            <div class="mot-fr-maj">UNE ABEILLE</div>
-            <div class="mot-fr-min">une abeille</div>
-          </td>
-          <td><div class="chinois">蜜蜂</div><div class="pinyin">mì fēng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une abeille')">🔊</button></td>
-        </tr>
-
-        <!-- 43. UN PAPILLON -->
-        <tr>
-          <td class="illustration">🦋</td>
-          <td>
-            <div class="mot-fr-maj">UN PAPILLON</div>
-            <div class="mot-fr-min">un papillon</div>
-          </td>
-          <td><div class="chinois">蝴蝶</div><div class="pinyin">hú dié</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un papillon')">🔊</button></td>
-        </tr>
-
-        <!-- 44. UNE COCCINELLE -->
-        <tr>
-          <td class="illustration">🐞</td>
-          <td>
-            <div class="mot-fr-maj">UNE COCCINELLE</div>
-            <div class="mot-fr-min">une coccinelle</div>
-          </td>
-          <td><div class="chinois">瓢虫</div><div class="pinyin">piáo chóng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une coccinelle')">🔊</button></td>
-        </tr>
-
-        <!-- 45. UNE ARAIGNEE -->
-        <tr>
-          <td class="illustration">🕷️</td>
-          <td>
-            <div class="mot-fr-maj">UNE ARAIGNÉE</div>
-            <div class="mot-fr-min">une araignée</div>
-          </td>
-          <td><div class="chinois">蜘蛛</div><div class="pinyin">zhī zhū</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une araignée')">🔊</button></td>
-        </tr>
-
-        <!-- 46. UN ESCARGOT -->
-        <tr>
-          <td class="illustration">🐌</td>
-          <td>
-            <div class="mot-fr-maj">UN ESCARGOT</div>
-            <div class="mot-fr-min">un escargot</div>
-          </td>
-          <td><div class="chinois">蜗牛</div><div class="pinyin">wō niú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un escargot')">🔊</button></td>
-        </tr>
-
-        <!-- 47. UN FLAMANT ROSE -->
-        <tr>
-          <td class="illustration">🦩</td>
-          <td>
-            <div class="mot-fr-maj">UN FLAMANT ROSE</div>
-            <div class="mot-fr-min">un flamant rose</div>
-          </td>
-          <td><div class="chinois">火烈鸟</div><div class="pinyin">huǒ liè niǎo</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un flamant rose')">🔊</button></td>
-        </tr>
-
-        <!-- 48. UN PAON -->
-        <tr>
-          <td class="illustration">🦚</td>
-          <td>
-            <div class="mot-fr-maj">UN PAON</div>
-            <div class="mot-fr-min">un paon</div>
-          </td>
-          <td><div class="chinois">孔雀</div><div class="pinyin">kǒng què</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un paon')">🔊</button></td>
-        </tr>
-
-        <!-- 49. UN CHAUVE-SOURIS -->
-        <tr>
-          <td class="illustration">🦇</td>
-          <td>
-            <div class="mot-fr-maj">UNE CHAUVE-SOURIS</div>
-            <div class="mot-fr-min">une chauve-souris</div>
-          </td>
-          <td><div class="chinois">蝙蝠</div><div class="pinyin">biān fú</div></td>
-          <td><button class="btn-audio" onclick="lireMot('une chauve-souris')">🔊</button></td>
-        </tr>
-
-        <!-- 50. UN DINOSAURE -->
-        <tr>
-          <td class="illustration">🦕</td>
-          <td>
-            <div class="mot-fr-maj">UN DINOSAURE</div>
-            <div class="mot-fr-min">un dinosaure</div>
-          </td>
-          <td><div class="chinois">恐龙</div><div class="pinyin">kǒng lóng</div></td>
-          <td><button class="btn-audio" onclick="lireMot('un dinosaure')">🔊</button></td>
-        </tr>
-
       </tbody>
     </table>
   </div>
- <!-- QR CODE CENTRÉ EN BAS DE PAGE -->
+
   <div class="qr-container">
     <a href="index.html">
-	<img src="qrCode_vocabulaire_github.png" alt="QR Code Vocabulaire" class="qr-code">
-	</a>
+      <img src="qrCode_vocabulaire_github.png" alt="QR Code Vocabulaire" class="qr-code">
+    </a>
   </div>
+
   <script>
     function lireMot(texte) {
       if ('speechSynthesis' in window) {
